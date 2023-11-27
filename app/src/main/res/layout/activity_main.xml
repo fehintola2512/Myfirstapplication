@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_1">
+
+    <TextView
+        android:id="@+id/startedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Let's Get Started"
+        android:textSize="75dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grow Together"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/startedText"/>
+
+    <Button
+        android:id="@+id/joinNowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOIN NOW"
+        android:textColor="#ffffff"
+        android:textSize="36dp"
+        android:textStyle="normal"
+        android:backgroundTint="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
